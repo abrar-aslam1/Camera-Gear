@@ -94,7 +94,7 @@ export function SiteHeader() {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image 
-            src="/Camera Gear-3.png"
+            src="/Camera Gear-4.png"
             alt="Camera Gear Logo"
             width={160}
             height={45}
@@ -148,6 +148,9 @@ export function SiteHeader() {
           </Link>
           <Link href="/videography" className="text-sm font-medium hover:text-primary">
             Videography
+          </Link>
+          <Link href="/blog/dslr-guide" className="text-sm font-medium hover:text-primary">
+            Blog
           </Link>
           <Link href="/about" className="text-sm font-medium hover:text-primary">
             About
