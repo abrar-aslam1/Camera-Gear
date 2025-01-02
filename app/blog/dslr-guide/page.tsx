@@ -14,11 +14,63 @@ import {
 export const metadata: Metadata = {
   title: "Best DSLR Cameras Under $500 in 2024: Top Budget-Friendly Options",
   description: "Discover the finest DSLR cameras under $500 that deliver professional-grade features without breaking the bank. Compare specs, image quality, and performance to find your perfect match.",
+  alternates: {
+    canonical: '/blog/dslr-guide'
+  },
+  openGraph: {
+    type: 'article',
+    title: "Best DSLR Cameras Under $500 in 2024: Top Budget-Friendly Options",
+    description: "Discover the finest DSLR cameras under $500 that deliver professional-grade features without breaking the bank. Compare specs, image quality, and performance to find your perfect match.",
+    publishedTime: '2024-01-01T00:00:00.000Z',
+    authors: ['Camera Gear Team'],
+    images: [
+      {
+        url: '/canon-rebel-t7.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Canon EOS Rebel T7 DSLR Camera'
+      }
+    ]
+  },
+  keywords: ['DSLR cameras', 'budget cameras', 'Canon EOS Rebel T7', 'Nikon D3500', 'Pentax K-70', 'photography', 'camera guide'],
+}
+
+// Add JSON-LD structured data
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Best DSLR Cameras Under $500 in 2024: Top Budget-Friendly Options',
+  description: 'Discover the finest DSLR cameras under $500 that deliver professional-grade features without breaking the bank. Compare specs, image quality, and performance to find your perfect match.',
+  image: 'https://cameragear.com/canon-rebel-t7.jpg',
+  datePublished: '2024-01-01T00:00:00.000Z',
+  dateModified: '2024-01-01T00:00:00.000Z',
+  author: [{
+    '@type': 'Organization',
+    name: 'Camera Gear Team',
+    url: 'https://cameragear.com'
+  }],
+  publisher: {
+    '@type': 'Organization',
+    name: 'Camera Gear',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://cameragear.com/Camera Gear-3.png'
+    }
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': 'https://cameragear.com/blog/dslr-guide'
+  }
 }
 
 export default function DSLRGuidePage() {
   return (
-    <article className="container mx-auto px-4 py-8 max-w-4xl">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <article className="container mx-auto px-4 py-8 max-w-4xl" itemScope itemType="https://schema.org/Article">
       {/* Table of Contents */}
       <div className="bg-muted p-6 rounded-lg mb-8">
         <h2 className="text-xl font-bold mb-4">Quick Navigation</h2>
@@ -31,20 +83,20 @@ export default function DSLRGuidePage() {
       </div>
 
       {/* Main Content */}
-      <h1 className="text-4xl font-bold mb-6">Best DSLR Cameras Under $500: Photography Excellence on a Budget</h1>
+      <h1 className="text-4xl font-bold mb-6" itemProp="headline">Best DSLR Cameras Under $500: Photography Excellence on a Budget</h1>
       
-      <p className="text-xl text-muted-foreground mb-8">
+      <p className="text-xl text-muted-foreground mb-8" itemProp="description">
         Finding an affordable DSLR camera that delivers exceptional image quality and professional features can transform your photography journey. In this comprehensive guide, we'll explore the most compelling DSLR options under $500 that combine performance, versatility, and value.
       </p>
 
-      <section id="why-choose" className="mb-12">
+      <section id="why-choose" className="mb-12" itemProp="articleSection">
         <h2 className="text-3xl font-bold mb-4">Why Choose a Budget DSLR?</h2>
         <p className="text-lg mb-4">
           Today's entry-level DSLRs pack impressive technology that was once exclusive to professional models. These cameras offer interchangeable lenses, superior low-light performance, and manual controls that smartphone cameras simply can't match. For aspiring photographers and enthusiasts, they provide an ideal gateway into serious photography without a significant financial investment.
         </p>
       </section>
 
-      <section id="top-cameras" className="mb-12">
+      <section id="top-cameras" className="mb-12" itemProp="articleSection">
         <h2 className="text-3xl font-bold mb-6">Top DSLR Cameras Under $500</h2>
         
         <div className="grid gap-6">
@@ -131,11 +183,28 @@ export default function DSLRGuidePage() {
             <p className="mb-4">
               While typically priced above $500 new, refurbished K-70 models offer weather-sealing and advanced features at budget-friendly prices. This camera stands out with its robust build quality and in-body stabilization.
             </p>
+            <div className="bg-muted p-4 rounded-lg mb-4">
+              <h4 className="font-bold mb-2">Key Features:</h4>
+              <ul className="list-disc list-inside space-y-2">
+                <li>24.24MP APS-C CMOS sensor</li>
+                <li>Weather-sealed construction</li>
+                <li>In-body image stabilization</li>
+                <li>Native ISO range of 100-102400</li>
+              </ul>
+            </div>
+            <a 
+              href="https://www.amazon.com/Pentax-K-70-Weather-Sealed-Camera-Black/dp/B0719JBW9J?th=1&linkCode=ll1&tag=camerageargui-20&linkId=b418af9b65c3c12931cbe427c760f83a&language=en_US&ref_=as_li_ss_tl" 
+              target="_blank" 
+              rel="nofollow noopener"
+              className="inline-block bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-colors"
+            >
+              Check Price on Amazon
+            </a>
           </Card>
         </div>
       </section>
 
-      <section id="considerations" className="mb-12">
+      <section id="considerations" className="mb-12" itemProp="articleSection">
         <h2 className="text-3xl font-bold mb-6">Essential Considerations</h2>
         <Table>
           <TableHeader>
@@ -161,7 +230,7 @@ export default function DSLRGuidePage() {
         </Table>
       </section>
 
-      <section id="investment-tips" className="mb-12">
+      <section id="investment-tips" className="mb-12" itemProp="articleSection">
         <h2 className="text-3xl font-bold mb-6">Investment Tips</h2>
         <Card className="p-6">
           <ul className="space-y-4">
@@ -185,7 +254,7 @@ export default function DSLRGuidePage() {
         </Card>
       </section>
 
-      <section className="mb-12">
+      <section className="mb-12" itemProp="articleSection">
         <h2 className="text-3xl font-bold mb-4">Conclusion</h2>
         <p className="text-lg">
           Today's budget DSLR market offers remarkable value for aspiring photographers. These cameras provide the perfect balance of features, image quality, and affordability, allowing you to develop your skills without compromise.
@@ -194,6 +263,7 @@ export default function DSLRGuidePage() {
           Whether you're capturing family moments or pursuing photography as a serious hobby, these sub-$500 DSLRs deliver the tools needed for creative growth and exceptional images. Choose based on your specific needs, and remember that any of these cameras can produce professional-quality photos in capable hands.
         </p>
       </section>
-    </article>
+      </article>
+    </>
   )
 }
