@@ -1,6 +1,6 @@
-import { videographyCategories } from '@/lib/constants/categories'
-import Image from 'next/image'
-import Link from 'next/link'
+import { videographyCategories } from "@/lib/constants/categories"
+import Image from "next/image"
+import Link from "next/link"
 
 export default function VideographyPage() {
   return (
@@ -25,6 +25,14 @@ export default function VideographyPage() {
             <p className="text-muted-foreground">{category.description}</p>
           </Link>
         ))}
+      </div>
+      <div className="mt-16">
+        <Link 
+          href="/videography/guides-2025"
+          className="inline-flex items-center px-6 py-3 text-lg font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors"
+        >
+          View 2025 Videography Guides & Recommendations
+        </Link>
       </div>
     </div>
   )
