@@ -31,6 +31,66 @@ export default function WildlifePhotographyPage() {
             <li>• Camouflage gear and blinds</li>
           </ul>
         </Card>
+
+        <div className="mt-8">
+          <h2 className="text-3xl font-bold mb-6">Wildlife Photography Guides</h2>
+          <div className="grid gap-6">
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Field Techniques</h3>
+              <ul className="space-y-3">
+                <li>1. Research animal behavior and habitats</li>
+                <li>2. Approach slowly and stay downwind</li>
+                <li>3. Use natural blinds and camouflage</li>
+                <li>4. Respect safe distances for different species</li>
+                <li>5. Learn to read animal body language</li>
+              </ul>
+            </Card>
+
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Camera Settings</h3>
+              <ul className="space-y-3">
+                <li>1. Use continuous autofocus with subject tracking</li>
+                <li>2. Set high shutter speeds (1/1000s minimum)</li>
+                <li>3. Enable back-button focus for better control</li>
+                <li>4. Use burst mode for action sequences</li>
+                <li>5. Monitor histogram for proper exposure</li>
+              </ul>
+            </Card>
+
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Composition Tips</h3>
+              <ul className="space-y-3">
+                <li>1. Focus on the animal's eyes</li>
+                <li>2. Leave space for movement direction</li>
+                <li>3. Include environmental context</li>
+                <li>4. Capture behavior and interactions</li>
+                <li>5. Consider different perspectives</li>
+              </ul>
+            </Card>
+
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Seasonal Advice</h3>
+              <ul className="space-y-3">
+                <li>1. Spring - Focus on new life and courtship</li>
+                <li>2. Summer - Photograph early morning/late evening</li>
+                <li>3. Autumn - Capture migration patterns</li>
+                <li>4. Winter - Document survival behaviors</li>
+                <li>5. Plan trips around breeding seasons</li>
+              </ul>
+            </Card>
+
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Ethics Guidelines</h3>
+              <ul className="space-y-3">
+                <li>1. Never bait or lure wildlife</li>
+                <li>2. Avoid disturbing nests or dens</li>
+                <li>3. Follow park and reserve rules</li>
+                <li>4. Keep location data private for sensitive species</li>
+                <li>5. Put animal welfare before getting the shot</li>
+              </ul>
+            </Card>
+          </div>
+        </div>
       </div>
     </div>
   )

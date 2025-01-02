@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 
 export default function WeddingPhotographyPage() {
@@ -32,6 +31,55 @@ export default function WeddingPhotographyPage() {
             <li>• Light stands and modifiers</li>
           </ul>
         </Card>
+
+        <div className="mt-8">
+          <h2 className="text-3xl font-bold mb-6">Wedding Photography Guides</h2>
+          <div className="grid gap-6">
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Pre-Wedding Preparation Guide</h3>
+              <ul className="space-y-3">
+                <li>1. Meet with the couple at least twice before the wedding</li>
+                <li>2. Create a detailed shot list including family groupings</li>
+                <li>3. Scout the venue beforehand, noting lighting conditions</li>
+                <li>4. Prepare backup equipment and check weather forecasts</li>
+                <li>5. Coordinate with wedding planners and venue staff</li>
+              </ul>
+            </Card>
+
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Ceremony Photography Tips</h3>
+              <ul className="space-y-3">
+                <li>1. Position yourself strategically for key moments</li>
+                <li>2. Use silent shutter mode during quiet moments</li>
+                <li>3. Capture reactions from family members</li>
+                <li>4. Be prepared for quick lighting changes</li>
+                <li>5. Have multiple memory cards ready</li>
+              </ul>
+            </Card>
+
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Reception Photography Techniques</h3>
+              <ul className="space-y-3">
+                <li>1. Set up off-camera flash early</li>
+                <li>2. Use bounce flash for natural-looking light</li>
+                <li>3. Capture candid moments on the dance floor</li>
+                <li>4. Document all important traditions</li>
+                <li>5. Get creative with long exposures for atmosphere</li>
+              </ul>
+            </Card>
+
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Post-Processing Workflow</h3>
+              <ul className="space-y-3">
+                <li>1. Back up images immediately after the event</li>
+                <li>2. Create consistent color grading presets</li>
+                <li>3. Focus on skin tones and white balance</li>
+                <li>4. Deliver preview images within 48 hours</li>
+                <li>5. Use batch processing for efficiency</li>
+              </ul>
+            </Card>
+          </div>
+        </div>
       </div>
     </div>
   )

@@ -32,14 +32,76 @@ export default function CommercialVideoPage() {
           </ul>
         </Card>
 
-        <Card className="p-6">
-          <h2 className="text-2xl font-semibold mb-4">Camera Movement</h2>
-          <ul className="space-y-2">
-            <li>• DJI Ronin 4D - All-in-one solution</li>
-            <li>• Motion Impossible AGITO - Remote dolly</li>
-            <li>• Technocrane 15 - For dynamic moves</li>
-          </ul>
-        </Card>
+        <div className="mt-8">
+          <h2 className="text-3xl font-bold mb-6">Commercial Video Production Guides</h2>
+          <div className="grid gap-6">
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Pre-Production Planning</h3>
+              <ul className="space-y-3">
+                <li>1. Develop detailed creative brief</li>
+                <li>2. Create comprehensive storyboards</li>
+                <li>3. Scout and secure locations</li>
+                <li>4. Cast talent and hire crew</li>
+                <li>5. Obtain necessary permits</li>
+              </ul>
+            </Card>
+
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Brand Integration</h3>
+              <ul className="space-y-3">
+                <li>1. Understand brand guidelines</li>
+                <li>2. Incorporate brand colors effectively</li>
+                <li>3. Position products strategically</li>
+                <li>4. Include key messaging points</li>
+                <li>5. Maintain consistent brand voice</li>
+              </ul>
+            </Card>
+
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Production Techniques</h3>
+              <ul className="space-y-3">
+                <li>1. Light products for maximum appeal</li>
+                <li>2. Use motion control for product shots</li>
+                <li>3. Capture multiple variations</li>
+                <li>4. Film sufficient b-roll</li>
+                <li>5. Record clean audio takes</li>
+              </ul>
+            </Card>
+
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Client Management</h3>
+              <ul className="space-y-3">
+                <li>1. Set clear expectations</li>
+                <li>2. Establish approval processes</li>
+                <li>3. Manage revision rounds</li>
+                <li>4. Document all decisions</li>
+                <li>5. Maintain professional communication</li>
+              </ul>
+            </Card>
+
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Post-Production</h3>
+              <ul className="space-y-3">
+                <li>1. Follow brand style guide</li>
+                <li>2. Create multiple deliverable formats</li>
+                <li>3. Add professional motion graphics</li>
+                <li>4. Color grade for consistency</li>
+                <li>5. Mix audio for various platforms</li>
+              </ul>
+            </Card>
+
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Platform Optimization</h3>
+              <ul className="space-y-3">
+                <li>1. Adapt content for different platforms</li>
+                <li>2. Consider aspect ratios</li>
+                <li>3. Optimize for mobile viewing</li>
+                <li>4. Follow platform specifications</li>
+                <li>5. Create platform-specific versions</li>
+              </ul>
+            </Card>
+          </div>
+        </div>
       </div>
     </div>
   )

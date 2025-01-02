@@ -31,6 +31,55 @@ export default function PortraitPhotographyPage() {
             <li>• Softboxes and beauty dish</li>
           </ul>
         </Card>
+
+        <div className="mt-8">
+          <h2 className="text-3xl font-bold mb-6">Portrait Photography Guides</h2>
+          <div className="grid gap-6">
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Posing Fundamentals</h3>
+              <ul className="space-y-3">
+                <li>1. Create angles with arms and legs</li>
+                <li>2. Position hands naturally and elegantly</li>
+                <li>3. Guide facial expressions and eye direction</li>
+                <li>4. Use head tilts and body angles</li>
+                <li>5. Consider body type when posing</li>
+              </ul>
+            </Card>
+
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Lighting Patterns</h3>
+              <ul className="space-y-3">
+                <li>1. Master Rembrandt lighting for drama</li>
+                <li>2. Use butterfly lighting for beauty shots</li>
+                <li>3. Implement split lighting for mood</li>
+                <li>4. Control light ratios for dimension</li>
+                <li>5. Work with natural window light</li>
+              </ul>
+            </Card>
+
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Communication Tips</h3>
+              <ul className="space-y-3">
+                <li>1. Build rapport before shooting</li>
+                <li>2. Give clear, simple directions</li>
+                <li>3. Show examples of desired poses</li>
+                <li>4. Offer positive reinforcement</li>
+                <li>5. Keep the session flowing naturally</li>
+              </ul>
+            </Card>
+
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Retouching Guidelines</h3>
+              <ul className="space-y-3">
+                <li>1. Maintain natural skin texture</li>
+                <li>2. Remove temporary blemishes only</li>
+                <li>3. Keep eye sparkle and catchlights</li>
+                <li>4. Enhance but don't transform</li>
+                <li>5. Consider the subject's preferences</li>
+              </ul>
+            </Card>
+          </div>
+        </div>
       </div>
     </div>
   )
