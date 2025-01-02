@@ -1,17 +1,26 @@
 #!/bin/bash
 
-# Fix photography pages
-sed -i '' 's/from "'\''/from "@\//g' app/photography/page.tsx
-sed -i '' 's/from "'\''/from "@\//g' app/photography/wedding/page.tsx
-sed -i '' 's/from "'\''/from "@\//g' app/photography/landscape/page.tsx
-sed -i '' 's/from "'\''/from "@\//g' app/photography/portrait/page.tsx
-sed -i '' 's/from "'\''/from "@\//g' app/photography/wildlife/page.tsx
-sed -i '' 's/from "'\''/from "@\//g' app/photography/guides-2025/page.tsx
+# Function to fix imports in a file
+fix_imports() {
+    local file=$1
+    # Fix component imports
+    sed -i '' 's/from "'\''/from "@\//g' "$file"
+    # Fix next/image and next/link imports
+    sed -i '' 's/from "next\//from "next\//g' "$file"
+}
 
-# Fix videography pages
-sed -i '' 's/from "'\''/from "@\//g' app/videography/page.tsx
-sed -i '' 's/from "'\''/from "@\//g' app/videography/filmmaking/page.tsx
-sed -i '' 's/from "'\''/from "@\//g' app/videography/youtube/page.tsx
-sed -i '' 's/from "'\''/from "@\//g' app/videography/documentary/page.tsx
-sed -i '' 's/from "'\''/from "@\//g' app/videography/commercial/page.tsx
-sed -i '' 's/from "'\''/from "@\//g' app/videography/guides-2025/page.tsx
+# Photography pages
+fix_imports "app/photography/page.tsx"
+fix_imports "app/photography/wedding/page.tsx"
+fix_imports "app/photography/landscape/page.tsx"
+fix_imports "app/photography/portrait/page.tsx"
+fix_imports "app/photography/wildlife/page.tsx"
+fix_imports "app/photography/guides-2025/page.tsx"
+
+# Videography pages
+fix_imports "app/videography/page.tsx"
+fix_imports "app/videography/filmmaking/page.tsx"
+fix_imports "app/videography/youtube/page.tsx"
+fix_imports "app/videography/documentary/page.tsx"
+fix_imports "app/videography/commercial/page.tsx"
+fix_imports "app/videography/guides-2025/page.tsx"
